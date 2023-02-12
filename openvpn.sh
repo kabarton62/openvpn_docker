@@ -1,6 +1,6 @@
 #!/bin/bash
 # Build the openvpn image
-docker build .
+docker build . -t openvpn
 
 # Get the image ID
 openvpnImage=$(docker images|grep openvpn|awk '{print $3}')
